@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LayersExample</string>
+    <string name="redValuePrompt">Red:</string>
+    <string name="greenValuePrompt">Green:</string>
+    <string name="blueValuePrompt">Blue:</string>
+    <string name="submit">Submit</string>
+    <string name="inOrder">In order</string>
+    <string name="sorted">Sorted</string>
+</resources>
