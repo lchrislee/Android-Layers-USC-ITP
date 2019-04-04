@@ -4,4 +4,5 @@
     <dimen name="margin_50pct">4dp</dimen>
     <dimen name="colorValueWidth">48dp</dimen>
     <dimen name="margin_200pct">16dp</dimen>
+    <dimen name="colorItemHeight">48dp</dimen>
 </resources>

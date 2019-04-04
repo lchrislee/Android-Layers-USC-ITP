@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(final View v) {
                 final Color selectedColor = getColor();
                 if (uniqueColors.contains(selectedColor)) {
-                    Toast.makeText(MainActivity.this, "You've already used this color", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, getString(R.string.alreadyUsingColor), Toast.LENGTH_SHORT).show();
                     return;
                 }
 
