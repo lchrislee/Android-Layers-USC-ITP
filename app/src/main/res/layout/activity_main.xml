@@ -7,111 +7,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:padding="@dimen/margin_150pct"
+    <!--
+      - This uses the custom view that we created. This is explicit because it uses the entire
+      - package path for the class. If you start typing the class name and it does not suggest
+      - the full path for you, make sure you linked the module dependencies correctly.
+      -->
+    <com.itp341.uicomponent.ColorSlider
+        android:id="@+id/colorSlider"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:gravity="center_vertical"
-            android:layout_marginTop="@dimen/margin_50pct"
-            android:layout_marginBottom="@dimen/margin_50pct"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:text="@string/redValuePrompt"
-                android:gravity="center_vertical"
-                android:layout_weight="1"
-                android:layout_margin="@dimen/margin_50pct"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:text="@string/greenValuePrompt"
-                android:gravity="center_vertical"
-                android:layout_weight="1"
-                android:layout_margin="@dimen/margin_50pct"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:text="@string/blueValuePrompt"
-                android:gravity="center_vertical"
-                android:layout_weight="1"
-                android:layout_margin="@dimen/margin_50pct"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:layout_marginTop="@dimen/margin_50pct"
-            android:layout_marginBottom="@dimen/margin_50pct"
-            android:layout_width="0dp"
-            android:layout_height="match_parent">
-
-            <SeekBar
-                android:id="@+id/skbarRedValue"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/margin_50pct"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <SeekBar
-                android:id="@+id/skbarGreenValue"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/margin_50pct"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <SeekBar
-                android:id="@+id/skbarBlueValue"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/margin_50pct"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_marginTop="@dimen/margin_50pct"
-            android:layout_marginBottom="@dimen/margin_50pct"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/txtRedValue"
-                android:gravity="center_horizontal"
-                android:layout_margin="@dimen/margin_50pct"
-                android:layout_width="@dimen/colorValueWidth"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/txtGreenValue"
-                android:gravity="center_horizontal"
-                android:layout_margin="@dimen/margin_50pct"
-                android:layout_width="@dimen/colorValueWidth"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/btnBlueValue"
-                android:gravity="center_horizontal"
-                android:layout_margin="@dimen/margin_50pct"
-                android:layout_width="@dimen/colorValueWidth"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        />
 
     <Button
         android:id="@+id/btnSubmit"
